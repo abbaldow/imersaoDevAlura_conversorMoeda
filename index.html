@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
-    <title>Aula01</title>
+    <title>Aula02</title>
 </head>
 <body>
     <header class="header-container">
@@ -22,14 +22,25 @@
 
     <main class="container-principal">
 
-        <h1>Calculadora de média</h1>
-        <p>Descubra qual a sua média de nota de todas as provas!</p>
+        <h1>Conversor de moedas</h1>
+        <p>Descubra os valores em real R$!</p>
         
         <div class="input-container">
-            <label class="etiqueta"> Primeira nota: <input type="text" id="nota1"></label>
-            <label class="etiqueta"> Segunda nota: <input type="text" id="nota2"></label>
-            <label class="etiqueta"> Teceira nota: <input type="text" id="nota3"></label>
-            <button class="botão"onclick="calcular()">Calcular</button>
+            <label class="etiqueta"> Insira o valor: <input type="text" id="valor"></label>
+            <p class="etiqueta">Quero converter:</p>
+            <div class="conversao-container">
+                
+                <input type="radio" name="select" id="option-1" checked>
+                <input type="radio" name="select" id="option-2">
+                  <label for="option-1" class="option option-1">
+                     <span>de R$ para U$</span>
+                     </label>
+                  <label for="option-2" class="option option-2">
+                     <span>de U$ para R$</span>
+                  </label>
+               </div>
+            
+            <button class="botão"onclick="converter()">Converter</button>
         </div>
 
        <div>
