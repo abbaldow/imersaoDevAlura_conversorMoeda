@@ -1,0 +1,120 @@
+:root{
+    --cor-base: #CB7481;
+    --cor-de-fundo: #f3f1ec;
+    --marrom-escuro: #493C41;
+    --verde-padrão:#A3B479;
+    --amarelo-padrão: #F1D7A2;
+    --fonte-principal: 'Noto Sans', sans-serif;
+    --fonte-especial: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    color: var(--marrom-escuro);
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 5px 0 15px rgba(180, 168, 168, 0.596);
+}
+svg{
+    width: 30px;
+    height: 30px;
+}
+.nome-container{
+    display: flex;
+}
+.nome-pagina{
+    font-family: var(--fonte-especial);
+    font-weight: 700;
+    color: var(--cor-base);
+    font-size: 30px;
+    margin-left: 1rem;
+}
+
+
+.container-principal{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;    
+    font-family: var(--fonte-principal);
+    margin: 4rem auto;
+    width: 500px;
+    font-size: 18px;
+    box-shadow: 5px 5px 15px rgba(145, 107, 107, 0.281);
+    border-radius: 15px;
+    border: none;
+    padding: 2rem 3rem;
+}
+.container-principal h1{
+    font-size: 22px;
+    font-family: var(--fonte-especial);
+    font-weight: 700;
+}
+.container-principal p{
+    padding: 1rem 0;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-weight: 500;
+
+}
+.etiqueta{
+    padding: 1rem 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input{
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 15px;
+    border: none;
+    width: 80px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+}
+
+.botão{
+    background-color: var(--cor-base);
+    padding: 0.6rem;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    color: var(--cor-de-fundo);
+    font-size: 16px;
+    margin: 0;
+    width: 120px;
+    
+}
+
+#resultado{
+    font-size: var(--fonte-especial);
+    padding: 1.5rem 0;
+}
+#resultado b{
+    font-weight: 700;
+    color: var(--cor-base);
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+}
+footer img{
+    width: 150px;
+    background-color: var(--cor-base);
+    margin: 1rem auto 0;
+
+}
