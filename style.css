@@ -1,6 +1,6 @@
 :root{
     --cor-base: #CB7481;
-    --cor-de-fundo: #f3f1ec;
+    --cor-de-fundo: #f3f1ec; 
     --marrom-escuro: #493C41;
     --verde-padrão:#A3B479;
     --amarelo-padrão: #F1D7A2;
@@ -74,14 +74,48 @@ svg{
 }
 
 input{
-    padding: 0.5rem;
-    margin-left: 0.5rem;
-    border-radius: 15px;
-    border: none;
-    width: 80px;
+    background-color:var(--cor-de-fundo) ;
+    padding: 0.3rem;
+    border-radius: 20px;
+    border: 4px solid var(--verde-padrão);
     font-weight: bold;
     text-align: center;
+    font-weight: bold;
+    color:var(--verde-padrão) ;
+    font-size: 16px;
+    margin-left: 0.5rem;
     width: 100px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.conversao-container{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.conversao-container .option{
+    background-color:var(--cor-de-fundo) ;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 4px solid var(--verde-padrão);
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+    color:var(--verde-padrão) ;
+    font-size: 16px;
+    margin: 0 1rem 1rem 0;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  color: var(--cor-de-fundo);
+  background: var(--verde-padrão);
+}
+
+.opcao-container{
+    margin-top: 1rem;
 }
 
 .botão{
